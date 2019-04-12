@@ -1,0 +1,31 @@
+﻿<Page x:Class="JMWally.AddCustomer"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:JMWally"
+      mc:Ignorable="d" 
+      Height="750" Width="800"
+      Title="AddCustomer">
+
+    <Grid x:Name="home">
+        <Label Content="Add Customer" HorizontalAlignment="Left" Margin="39,90,0,0" VerticalAlignment="Top" FontFamily="Calibri" FontSize="22"/>
+        <Label x:Name="title" Content="Wally's World Database" HorizontalAlignment="Left" Margin="39,29,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Foreground="#FF002CF3"/>
+        <Label Content="First Name: " HorizontalAlignment="Left" Margin="59,174,0,0" VerticalAlignment="Top"/>
+        <Label Content="Last Name: " HorizontalAlignment="Left" Margin="59,230,0,0" VerticalAlignment="Top" Width="88"/>
+        <Label  Content="Phone Number: " HorizontalAlignment="Left" Margin="59,286,0,0" VerticalAlignment="Top" Width="106"/>
+        <TextBox x:Name="fName" HorizontalAlignment="Left" Height="23" Margin="176,174,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="lName" HorizontalAlignment="Left" Height="23" Margin="176,234,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="phoneNum" HorizontalAlignment="Left" Height="23" Margin="176,286,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="submit" Content="Add To Database" HorizontalAlignment="Left" Margin="135,355,0,0" VerticalAlignment="Top" Width="123" Height="30" Click="submit_Click"/>
+        <Button Name="buyNew" Content="Buy New Vehicle" HorizontalAlignment="Left" Margin="559,153,0,0" VerticalAlignment="Top" Width="137" Height="44" Opacity="0" Click="buyNew_Click"/>
+        <Button Name="trade" Content="Trade In" HorizontalAlignment="Left" Margin="559,267,0,0" VerticalAlignment="Top" Width="137" Height="44" Opacity="0" Click="trade_Click"/>
+        <Label x:Name="enterNew" Content="Enter VIN of vehicle : " HorizontalAlignment="Left" Margin="459,87,0,0" VerticalAlignment="Top" Width="115" Opacity="0"/>
+        <TextBox x:Name="VINNew" HorizontalAlignment="Left" Height="23" Margin="612,90,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Opacity="0"/>
+        <Button x:Name="placeOrder" Content="Place Order" HorizontalAlignment="Left" Margin="612,174,0,0" VerticalAlignment="Top" Width="145" Height="42" Click="placeOrder_Click" Opacity="0"/>
+        <Label x:Name="orderInfo" Content="Order Info" HorizontalAlignment="Left" Margin="455,127,0,0" VerticalAlignment="Top" Height="50" Width="119" FontFamily="Calibri" FontSize="22" Opacity="0"/>
+        <TextBlock x:Name="rec" HorizontalAlignment="Left" Margin="352,234,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="456" Width="344"/>
+        <Button x:Name="search" Content="Retreive Record" HorizontalAlignment="Left" Margin="10,452,0,0" VerticalAlignment="Top" Width="104" Height="37" Click="search_Click"/>
+        <Button x:Name="display" Content="Display Inventory" HorizontalAlignment="Left" Margin="135,452,0,0" VerticalAlignment="Top" Width="123" Height="37"/>
+    </Grid>
+</Page>

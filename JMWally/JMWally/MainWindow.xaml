@@ -1,0 +1,18 @@
+﻿<Window x:Class="JMWally.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JMWally"
+        mc:Ignorable="d"
+        Title="JMWally" Height="450" Width="800" Background="#FF46D2FB">
+    <Grid>
+        <Label x:Name="title" Content="Wally's World Database" HorizontalAlignment="Left" Margin="39,29,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Foreground="#FF002CF3"/>
+        <Button x:Name="addCustomer" Content="Add New Customer" HorizontalAlignment="Left" Margin="39,143,0,0" VerticalAlignment="Top" Width="231" Height="35" FontWeight="Bold" Click="addCustomer_Click"/>
+        <Button x:Name="sales" Content="Retrieve Sales Record" HorizontalAlignment="Left" Margin="513,143,0,0" VerticalAlignment="Top" Width="216" Height="35" FontWeight="Bold" Click="sales_Click"/>
+        <Button x:Name="displayInventory" Content="Display Inventory" HorizontalAlignment="Left" Margin="279,241,0,0" VerticalAlignment="Top" Width="205" Height="34" FontWeight="Bold" Click="displayInventory_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-128,-84,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>
